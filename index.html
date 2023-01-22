@@ -25,19 +25,31 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link lng-navhome" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link lng-navabout" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Service</a>
+                        <a class="nav-link lng-navservice" href="#service">Service</a>
                     </li>                   
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link lng-navskills" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link lng-navportfolio" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="btn btn-secondary dropdown-toggle lng-section-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Language
+                            </a>
+                          
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item lang-toggler" onclick="langChange('#en')" href="#">English</a>
+                              <a class="dropdown-item lang-toggler" onclick="langChange('#ru')" href="#">Русский</a>
+                            </div>
+                          </div>
                     </li>
                 </ul>
             </div>
@@ -49,13 +61,13 @@
     <header class="header" id="home">
         <div class="container">
             <div class="infos">
-                <h6 class="subtitle">hello,I'm</h6>
-                <h6 class="title">Kamil Alimetov</h6>
-                <p>Web Developer</p>
+                <h6 class="subtitle lng-header-subtitle">hello,I'm</h6>
+                <h6 class="title lng-header-name">Kamil Alimetov</h6>
+                <p class="lng-header-profession">Web Developer</p>
 
                 <div class="buttons pt-3">
-                    <button class="btn btn-primary rounded">HIRE ME</button>
-                    <a href="assets/uploads/resume.pdf" download target="_blank" class="btn btn-dark rounded" style="color: white; cursor: pointer;">DOWNLOAD CV</a>
+                    <button class="btn btn-primary rounded lng-header-leftbtn">HIRE ME</button>
+                    <a href="assets/uploads/resume.pdf" download target="_blank" class="btn btn-dark rounded lng-header-rightbtn" style="color: white; cursor: pointer;">DOWNLOAD CV</a>
                 </div>      
 
                 <div class="socials mt-4">
@@ -73,16 +85,16 @@
         <!-- Header-widget -->
         <div class="widget">
             <div class="widget-item">
-                <h2>11</h2>
-                <p>Happy Clients</p>
+                <h2 class="align-middle">11</h2>
+                <p class="lng-underheader-1">Happy Clients</p>
             </div>
             <div class="widget-item">
                 <h2>14</h2>
-                <p>Project Completed</p>
+                <p class="lng-underheader-2">Project Completed</p>
             </div>
             <div class="widget-item">
                 <h2>20000</h2>
-                <p>Analyzed and optimized <br> lines of code</p>
+                <p class="lng-underheader-3">Written lines of code</p>
             </div>
         </div>
     </header>
@@ -96,14 +108,14 @@
                     <img src="assets/imgs/avatar.jpeg" alt="" class="img-thumbnail mb-4">
                 </div>
                 <div class="pl-md-4 col-md-9">
-                    <h6 class="title">Kamil Alimetov</h6>
-                    <p class="subtitle">Web Developer</p>
-                    <p>I am a 4th year student of SPbSUT Information security. I have been interested in programming and IT since the age of 14. I tried myself in different areas, from games and modeling to robots and the Internet of things. But most of all I am drawn to the Web. I have all the qualities a programmer needs: I am able to work in a team, I can learn and teach, I think beyond the scope of technical specifications, I am not afraid to take responsibility and complete tasks on time. I position myself as junior+</p>
-                    <p>— Developed websites using modern technologies (PHP7/8, Laravel9, SQL/MySQL, C++, JS, etc.)</p>
-                    <p>— Improved the teamwork process by implementing a modern framework and design/development patterns.</p>
-                    <p>— Finalized the layout and existing components. Developed new components for various websites.</p>
-                    <p>— Analyzed and optimized more than 20,000 lines of code.</p>
-                    <a href="assets/uploads/resume.pdf" download target="_blank" class="btn btn-primary rounded mt-3" style="color: white; cursor: pointer;">DOWNLOAD CV</a>                   
+                    <h6 class="title lng-about-name">Kamil Alimetov</h6>
+                    <p class="subtitle lng-about-profession">Web Developer</p>
+                    <p class="lng-about-line1">I am a 4th year student of SPbSUT Information security. I have been interested in programming and IT since the age of 14. I tried myself in different areas, from games and modeling to robots and the Internet of things. But most of all I am drawn to the Web. I have all the qualities a programmer needs: I am able to work in a team, I can learn and teach, I think beyond the scope of technical specifications, I am not afraid to take responsibility and complete tasks on time. I position myself as junior+</p>
+                    <p class="lng-about-line2">— Developed websites using modern technologies (Python, Django, SQL/MySQL, C++, JS, etc.)</p>
+                    <p class="lng-about-line3">— Improved the teamwork process by implementing a modern framework and design/development patterns.</p>
+                    <p class="lng-about-line4">— Finalized the layout and existing components. Developed new components for various websites.</p>
+                    <p class="lng-about-line5">— Analyzed and optimized more than 20,000 lines of code.</p>
+                    <a href="assets/uploads/resume.pdf" download target="_blank" class="btn btn-primary rounded mt-3 lng-about-btn" style="color: white; cursor: pointer;">DOWNLOAD CV</a>                   
                 </div>
             </div>
         </div>
@@ -112,17 +124,17 @@
     <!-- Service section -->
     <section id="service" class="section">
         <div class="container text-center">
-            <h6 class="subtitle">Service</h6>
-            <h6 class="section-title mb-4">What I Do</h6>
-            <p class="mb-5 pb-4">I can perform all these tasks at the same equally worthy level.</p>
+            <h6 class="subtitle lng-services-headname">Service</h6>
+            <h6 class="section-title mb-4 lng-services-headname-2">What I Do</h6>
+            <p class="mb-5 pb-4 lng-services-subtitle">I can perform all these tasks at the same equally worthy level.</p>
 
             <div class="row">
                 <div class="col-sm-6 col-md-4 mb-4">
                     <div class="custom-card card border">
                         <div class="card-body">
                             <i class="icon fa fa-computer"></i>
-                            <h5>Web Development</h5>
-                            <p class="mx-4 mt-3">BackEnd: Python, Django, PHP and FrontEnd: VuesJs, HTML5, CSS3. This set is the popular (despite the fact that there are worthy alternatives) and allows you to quickly and efficiently build complex and large-scale systems. As with everything, it has its pros and cons.</p>
+                            <h5 class="lng-services-1-name">Web Development</h5>
+                            <p class="mx-4 mt-3 lng-services-1-desc">BackEnd: Python, Django, PHP and FrontEnd: VuesJs, HTML5, CSS3. This set is the popular (despite the fact that there are worthy alternatives) and allows you to quickly and efficiently build complex and large-scale systems. As with everything, it has its pros and cons.</p>
                         </div>
                     </div>
                 </div>
@@ -130,8 +142,8 @@
                     <div class="custom-card card border">
                         <div class="card-body">
                             <i class="icon fa fa-city"></i>
-                            <h5>Software engineering</h5>
-                            <p class="mx-4 mt-3">Software engineering is a set of technologies that allows you to build the most reliable and efficient systems, monitor the life cycle of a product from its idea to implementation. Mathematical methods for building systems will allow you to evaluate the work done</p>
+                            <h5 class="lng-services-2-name">Software engineering</h5>
+                            <p class="mx-4 mt-3 lng-services-2-desc">Software engineering is a set of technologies that allows you to build the most reliable and efficient systems, monitor the life cycle of a product from its idea to implementation. Mathematical methods for building systems will allow you to evaluate the work done</p>
                         </div>
                     </div>
                 </div>
@@ -139,8 +151,8 @@
                     <div class="custom-card card border">
                         <div class="card-body">
                             <i class="icon fa fa-gears"></i>
-                            <h5>CI/CD</h5>
-                            <p class="mx-4 mt-3">It is a combination of continuous integration and continuous software deployment during development with docker. CI/CD integrates the development, testing and deployment of an application. This allows to make any changes without stopping work.</p>
+                            <h5 class="lng-services-3-name">CI/CD</h5>
+                            <p class="mx-4 mt-3 lng-services-3-desc">It is a combination of continuous integration and continuous software deployment during development with docker. CI/CD integrates the development, testing and deployment of an application. This allows to make any changes without stopping work.</p>
                         </div>
                     </div>
                 </div>
@@ -148,8 +160,8 @@
                     <div class="custom-card card border">
                         <div class="card-body">
                             <i class="icon fa fa-lightbulb"></i>
-                            <h5>Web Idea</h5>
-                            <p class="mx-4 mt-3">Creativity and attention to detail is the key to success in the development of modern systems. When building architecture, I try to implement new and interesting solutions in order to achieve the best result both FrontEnd and BackEnd.</p>
+                            <h5 class="lng-services-4-name">Web Idea</h5>
+                            <p class="mx-4 mt-3 lng-services-4-desc">Creativity and attention to detail is the key to success in the development of modern systems. When building architecture, I try to implement new and interesting solutions in order to achieve the best result both FrontEnd and BackEnd.</p>
                         </div>
                     </div>
                 </div>
@@ -157,8 +169,8 @@
                     <div class="custom-card card border">
                         <div class="card-body">
                             <i class="icon fa fa-clipboard-question"></i>
-                            <h5>Support</h5>
-                            <p class="mx-4 mt-3">In work, it is very important and necessary to be able to maintain contact with the team, customer and manager, find a common language and be friendly. I am a very sociable person who can help solve the problem and come to the best result, even if it is very difficult.
+                            <h5 class="lng-services-5-name">Support</h5>
+                            <p class="mx-4 mt-3 lng-services-5-desc">In work, it is very important and necessary to be able to maintain contact with the team, customer and manager, find a common language and be friendly. I am a very sociable person who can help solve the problem and come to the best result, even if it is very difficult.
                         </div>
                     </div>
                 </div>
@@ -166,8 +178,8 @@
                     <div class="custom-card card border">
                         <div class="card-body">
                             <i class="icon fa fa-brain"></i>
-                            <h5>IoT</h5>
-                            <p class="mx-4 mt-3">In addition to programming websites, I also took part in the development of smart home systems, artificial intelligence and telegram bots. To do this, I assembled my own team. It gave an incredible amount of new knowledge, teamwork, and technical skills.</p>
+                            <h5 class="lng-services-6-name">IoT</h5>
+                            <p class="mx-4 mt-3 lng-services-6-desc">In addition to programming websites, I also took part in the development of smart home systems, artificial intelligence and telegram bots. To do this, I assembled my own team. It gave an incredible amount of new knowledge, teamwork, and technical skills.</p>
                         </div>
                     </div>
                 </div>
@@ -177,11 +189,11 @@
     <!-- End of Sectoin -->
 
     <!-- Skills section -->
-    <section class="section">
+    <section id="skills" class="section">
         <div class="container text-center">
-            <h6 class="subtitle">Skills</h6>
-            <h6 class="section-title mb-4">Why Choose me</h6>
-            <p class="mb-5 pb-4">My main direction is BackEnd. But I am constantly working on developing my own skills.</p>
+            <h6 class="subtitle lng-skills-title">Skills</h6>
+            <h6 class="section-title mb-4 lng-skills-subtitle">Why Choose me</h6>
+            <p class="mb-5 pb-4 lng-skills-description">My main direction is BackEnd. But I am constantly working on developing my own skills.</p>
 
             <div class="row text-left">
                 <div class="col-sm-6">
@@ -237,51 +249,47 @@
     </section>
     <!-- End of Skills sections -->
 
-    <div class="dynamic-text-container">
-        <div class="dynamic-text"></div>
-      </div>
-
     <!-- Portfolio section -->
     <section id="portfolio" class="section">
         <div class="container text-center">
-            <h6 class="subtitle">Portfolio</h6>
-            <h6 class="section-title mb-4">Check My Wonderful Works</h6>
-            <p class="mb-5 pb-4">Check out my work and give feedback. You can also offer your ideas for their development.</p>
+            <h6 class="subtitle lng-portfolio-title">Portfolio</h6>
+            <h6 class="section-title mb-4 lng-portfolio-subtitle">Check My Wonderful Works</h6>
+            <p class="mb-5 pb-4 lng-portfolio-description">Check out my work and give feedback. You can also offer your ideas for their development.</p>
 
             <div class="row">
                 <div class="col-sm-4">
+                    <a href="chat.html">
                     <div class="img-wrapper">
                         <img src="assets/imgs/chat.jpeg" alt="сайт для обмена сообщениями">
                         <div class="overlay">
                             <div class="overlay-infos">
-                                <h5>Chat</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
+                                <h5 class="lng-portfolio-1">Chat</h5>
                             </div>  
-                        </div>
-                    </div>                
-                </div>
-                <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/snake.jpg" alt="игра змейка">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Game</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
-                        </div>
-                    </div>
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/meat.jpeg" alt="сайт по продаже мяса">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Shop</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>                              
                         </div>
                     </div>  
+                    </a>              
+                </div>
+                <div class="col-sm-4">
+                    <a href="snake.html">
+                        <div class="img-wrapper">
+                            <img src="assets/imgs/snake.jpg" alt="игра змейка">
+                            <div class="overlay">
+                                <div class="overlay-infos">
+                                    <h5 class="lng-portfolio-2">Game</h5>
+                                </div>  
+                            </div>
+                        </div>
+                    </a>
+                    <a href="meat.html">
+                        <div class="img-wrapper">
+                            <img src="assets/imgs/meat.jpeg" alt="сайт по продаже мяса">
+                            <div class="overlay">
+                                <div class="overlay-infos">
+                                    <h5 class="lng-portfolio-3">Shop</h5>
+                                </div>                              
+                            </div>
+                        </div>  
+                    </a>
                     <!-- <div class="img-wrapper">
                         <img src="assets/imgs/soon.jpeg" alt="">
                         <div class="overlay">
@@ -294,16 +302,16 @@
                     </div>                   -->
                 </div>
                 <div class="col-sm-4">
-                    <div class="img-wrapper">
-                        <img src="assets/imgs/apartments.jpeg" alt="аренда апартаментов">
-                        <div class="overlay">
-                            <div class="overlay-infos">
-                                <h5>Rental website</h5>
-                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
-                                <a href="javascript:void(0)"><i class="ti-link"></i></a>
-                            </div>  
+                    <a href="apartaments.html">
+                        <div class="img-wrapper">
+                            <img src="assets/imgs/apartments.jpeg" alt="аренда апартаментов">
+                            <div class="overlay">
+                                <div class="overlay-infos">
+                                    <h5 class="lng-portfolio-4">Rental website</h5>
+                                </div>  
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <!-- <div class="img-wrapper">
                         <img src="assets/imgs/soon.jpeg" alt="">
                         <div class="overlay">
@@ -342,63 +350,9 @@
     </section>      
     <!-- End od Hire me section. -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="position-relative section">
-        <div class="container text-center">
-            <h6 class="subtitle">Contact</h6>
-            <h6 class="section-title mb-4">Get In Touch With Me</h6>
-            <p class="mb-5 pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In alias dignissimos. <br> rerum commodi corrupti, temporibus non quam.</p>
-
-            <div class="contact text-left">
-                <div class="form">
-                    <h6 class="subtitle">Available 24/7</h6>
-                    <h6 class="section-title mb-4">Get In Touch</h6>
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="contact-message" id="" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block rounded w-lg">Send Message</button>
-                    </form>
-                </div>
-                <div class="contact-infos">
-                    <div class="item">
-                        <i class="ti-location-pin"></i>
-                        <div class="">
-                            <h5>Location</h5>
-                            <p> 12345 Fake ST NoWhere AB Country</p>
-                        </div>                          
-                    </div>
-                    <div class="item">
-                        <i class="ti-mobile"></i>
-                        <div>
-                            <h5>Phone Number</h5>
-                            <p>(123) 456-7890</p>
-                        </div>                          
-                    </div>
-                    <div class="item">
-                        <i class="ti-email"></i>
-                        <div class="mb-0">
-                            <h5>Email Address</h5>
-                            <p>info@website.com</p>
-                        </div>
-                    </div>
-                </div>                  
-            </div>
-        </div>  
-        <div id="map">
-            <iframe src="https://snazzymaps.com/embed/61257"></iframe>
-        </div>      
-    </section>
-    <!-- End of Contact Section -->
 
     <!-- Page Footer -->
-    <footer class="page-footer">
+    <footer class="page-footer shadow">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-6">
@@ -425,6 +379,8 @@
 
     <!-- steller js -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/translate.js"></script>
 
 </body>
 </html>

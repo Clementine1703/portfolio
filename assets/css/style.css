@@ -11592,6 +11592,10 @@ pre {
   border-right: 1px solid #dee2e6;
 }
 
+.header .widget .widget-item:last-child{
+  flex-basis: 2;
+}
+
 .header .widget .widget-item:last-child {
   border-right: 0;
 }
