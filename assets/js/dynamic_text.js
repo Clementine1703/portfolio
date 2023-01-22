@@ -2,57 +2,10 @@
 
 // smooth scroll
 $(document).ready(function(){
-	$(".nav-link").on('click', function(event) {
-
-    	if (this.hash !== "") {
-
-			event.preventDefault();
-
-			var hash = this.hash;
-
-			$('html, body').animate({
-				scrollTop: $(hash).offset().top
-			}, 700, function(){
-				window.location.hash = hash;
-			});
-      	} 
-    });
-
-
-
 
 	// ——————————————————————————————————————————————————
 // TextScramble
-// —————————————————————————————————————————————————
-  
-  // ——————————————————————————————————————————————————
-  // Example
-  // ——————————————————————————————————————————————————
-  
-//   const phrases = [
-// 	'Neo,',
-// 	'sooner or later',
-// 	'you\'re going to realize',
-// 	'just as I did',
-// 	'that there\'s a difference',
-// 	'between knowing the path',
-// 	'and walking the path'
-//   ]
-  
-//   const el = document.querySelector('.dynamic-text')
-//   const fx = new TextScramble(el)
-  
-//   let counter = 0
-//   const next = () => {
-// 	fx.setText(phrases[counter]).then(() => {
-// 	  setTimeout(next, 800)
-// 	})
-// 	counter = (counter + 1) % phrases.length
-//   }
-  
-//   next()
-
-});
+// ——————————————————————————————————————————————————
 
 class TextScramble {
 	constructor(el) {
@@ -107,3 +60,32 @@ class TextScramble {
 	  return this.chars[Math.floor(Math.random() * this.chars.length)]
 	}
   }
+  
+  // ——————————————————————————————————————————————————
+  // Example
+  // ——————————————————————————————————————————————————
+  
+//   const phrases = [
+// 	'Neo,',
+// 	'sooner or later',
+// 	'you\'re going to realize',
+// 	'just as I did',
+// 	'that there\'s a difference',
+// 	'between knowing the path',
+// 	'and walking the path'
+//   ]
+  
+//   const el = document.querySelector('.dynamic-text')
+//   const fx = new TextScramble(el)
+  
+//   let counter = 0
+//   const next = () => {
+// 	fx.setText(phrases[counter]).then(() => {
+// 	  setTimeout(next, 800)
+// 	})
+// 	counter = (counter + 1) % phrases.length
+//   }
+  
+//   next()
+
+});

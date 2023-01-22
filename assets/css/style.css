@@ -43,6 +43,25 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.dynamic-text-container{
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+  
+.dynamic-text{
+  font-weight: 100;
+  font-size: 50px;
+  color: white;
+}
+
+.dud{
+  color: white;
+}
+  
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
@@ -11602,7 +11621,13 @@ pre {
 .header-title {
   font-size: 2.4rem;
   font-weight: bold;
-  opacity: .8;
+  /* opacity: .8; */
+  color: white;
+}
+
+.header-description{
+  font-size: 1.6rem;
+  color: white;
 }
 
 .header-mini {
@@ -11627,7 +11652,7 @@ pre {
           justify-content: center;
   text-align: center;
   padding: 1rem;
-  background: #ffcbbd;
+  background: #ff7a57;
 }
 
 .section {
@@ -11645,4 +11670,9 @@ pre {
 
 .section.bg-gray {
   background: white;
+}
+
+.gallery-img{
+  width: 85%;
+  margin-left: 7.5%;
 }
