@@ -36,7 +36,7 @@ const langArr = {
         "en": "Web Developer",
     }, 
 	"header-leftbtn": {
-        "ru": "ЗАКАЗАТЬ",
+        "ru": "НАНЯТЬ",
         "en": "HIRE ME",
     }, 
 	"header-rightbtn": {
@@ -188,6 +188,18 @@ const langArr = {
         "en": "Shop",
     },
 	"portfolio-4": {
+        "ru": "Сайт для аренды комнат",
+        "en": "Rental website",
+    },
+    "hireme-title": {
+        "ru": "Наймите Меня Для Вашего Проекта",
+        "en": "Hire Me For Your Project",
+    },
+    "hireme-btn": {
+        "ru": "Нанять!",
+        "en": "Hire me!",
+    },
+    "portfolio-4": {
         "ru": "Сайт для аренды комнат",
         "en": "Rental website",
     },

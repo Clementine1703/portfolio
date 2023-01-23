@@ -1,6 +1,11 @@
-const select = document.querySelectorAll('.lang-toggler');
-const allLang = ['en', 'ru'];
+let select = '';
+let allLang = [];
 
+window.onload = function () {
+    select = document.querySelectorAll('.lang-toggler');
+    allLang = ['en', 'ru'];
+    changeLanguage()
+}
 
 function langChange(hash){
 	window.location.hash = hash;
@@ -32,4 +37,4 @@ function changeLanguage() {
     }
 }
 
-changeLanguage()
+
