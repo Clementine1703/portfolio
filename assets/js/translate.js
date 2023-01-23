@@ -452,6 +452,7 @@ function changeLanguage() {
         }
         else {
             location.href = window.location.pathname + '#en';
+            hash = 'en'
         }
     }
     for (let key in langArr) {
