@@ -393,10 +393,6 @@ const langArr = {
         "ru": "Реализовывая данный сайт я освоил как в теории, так и на практике следующие аспекты:",
         "en": "Implementing this site, I have mastered both in theory and in practice the following aspects of:",
     },
-    "": {
-        "ru": "",
-        "en": "",
-    },
     "apart-mastered-4": {
         "ru": "UTM метки",
         "en": "UTM tags",
@@ -426,44 +422,15 @@ const langArr = {
         "ru": "Галерея",
         "en": "Gallery",
     },
-	"": {
-        "ru": "",
-        "en": "",
-    },
-	"": {
-        "ru": "",
-        "en": "",
-    },
-	"": {
-        "ru": "",
-        "en": "",
-    },
-	"": {
-        "ru": "",
-        "en": "",
-    },
-	"": {
-        "ru": "",
-        "en": "",
-    },
-	"": {
-        "ru": "",
-        "en": "",
-    },
-	"": {
-        "ru": "",
-        "en": "",
-    },
-	"": {
-        "ru": "",
-        "en": "",
-    },
-
 }
 
-const select = document.querySelectorAll('.lang-toggler');
+let select = [];
 const allLang = ['en', 'ru'];
-changeLanguage()
+
+$(document).ready(function(){
+    select = document.querySelectorAll('.lang-toggler');
+    changeLanguage()
+})
 
 
 function langChange(hash){
