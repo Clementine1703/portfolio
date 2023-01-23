@@ -193,8 +193,8 @@ const langArr = {
         "en": "Rental website",
     },
     "hireme-title": {
-        "ru": "Наймите Меня Для Вашего Проекта",
-        "en": "Hire Me For Your Project",
+        "ru": "Наймите меня для вашего проекта",
+        "en": "Hire me for your project",
     },
     "hireme-btn": {
         "ru": "Нанять!",
