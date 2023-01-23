@@ -3,31 +3,42 @@
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <meta name="description" content="Start your development with Steller landing page.">
-   <meta name="author" content="Devcrud">
-   <title>Steller | Components</title>
+   <meta name="author" content="Kamil">
+   <title>Krolchansk</title>
    <!-- font icons -->
    <link rel="stylesheet" href="assets/vendors/fontawesome-free-6.2.1-web/css/all.css">
    <!-- Bootstrap + main  -->
    <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="icon" sizes="108x108" href="assets/imgs/logo.jpeg">
 </head>
 <body>
 
    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" data-spy="affix" data-offset-top="0">
       <div class="container">
-          <a class="navbar-brand" href="index.html"><button class="btn btn-light btn-lg">Главная</button></a>
+          <a class="navbar-brand" href="index.html"><button class="btn btn-light btn-lg lng-homebtn">Главная</button></a>
+          <div class="dropdown show">
+            <a class="btn btn-secondary dropdown-toggle lng-section-button" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Language
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item lang-toggler" onclick="langChange('#en')" href="#">English</a>
+              <a class="dropdown-item lang-toggler" onclick="langChange('#ru')" href="#">Русский</a>
+            </div>
+          </div>
       </div>          
   </nav>
 
    <!-- Page Header -->
    <header class="header header-mini"> 
-      <div class="header-title">ONLINE STORE "KROLCHANSK"</div> 
-      <div class="header-description">Online showcase for the sale of meat. Own design, analytics of visits.<br>
-         PHP7, SQL/MySQL, Html/Css, Docker, Yandex<br>
+      <div class="header-title lng-meat-title">ONLINE STORE "KROLCHANSK"</div> 
+      <div class="header-description lng-meat-description">Online showcase for the sale of meat. Own design, analytics of visits.<br>
+         PHP7, SQL/MySQL, Html/Css, Docker, Yandex<br></div>
+         <div>
          <div class="dynamic-text-container">
             <div class="dynamic-text"></div>
           </div>
-      </div> 
+         </div> 
       
    </header> <!-- End Of Page Header -->
 
@@ -35,30 +46,30 @@
    <div class="container">
 
       <!-- Buttons -->
-      <h3 class="mt-5">Purpose</h3>
-      <h6 class="section-secondary-title">Gaining experience in writing an online store, analytics of product interest and audience engagement. Advanced development of key skills in web development, working with databases, programming and design patterns, auto-deploy and maintaining a site on a hosting.</h6>
+      <h3 class="mt-5 lng-meat-purpose-title">Purpose</h3>
+      <h6 class="section-secondary-title lng-meat-purpose-description">Gaining experience in writing an online store, analytics of product interest and audience engagement. Advanced development of key skills in web development, working with databases, programming and design patterns, auto-deploy and maintaining a site on a hosting.</h6>
       <hr>
 
-      <h3 class="mt-5">Key Features</h3>
-      <h6 class="section-secondary-title">Yandex analytics, autodeploy docker, authorization and role system, interaction with the database, bootstrap.</h6>
+      <h3 class="mt-5 lng-meat-key-title">Key Features</h3>
+      <h6 class="section-secondary-title lng-meat-key-description">Yandex analytics, autodeploy docker, authorization and role system, interaction with the database, bootstrap.</h6>
       <hr>
 
-      <h3 class="mt-5">Mastered/developed</h3>
-      <h6 class="section-secondary-title">Implementing this site, I have mastered both in theory and in practice the following aspects of:</h6>
+      <h3 class="mt-5 lng-meat-mastered-title">Mastered/developed</h3>
+      <h6 class="section-secondary-title lng-meat-mastered-description">Implementing this site, I have mastered both in theory and in practice the following aspects of:</h6>
          <footer class="blockquote-footer">PHP 7</footer>
-         <footer class="blockquote-footer">Connecting and analyzing Yandex metrics</footer>
-         <footer class="blockquote-footer">Autodeploy and Docker</footer>
+         <footer class="blockquote-footer lng-meat-mastered-2">Connecting and analyzing Yandex metrics</footer>
+         <footer class="blockquote-footer lng-meat-mastered-3">Autodeploy and Docker</footer>
          <footer class="blockquote-footer">JS</footer>
-         <footer class="blockquote-footer">Stages of creating and designing a software product, software product life cycle
+         <footer class="blockquote-footer lng-meat-mastered-5">Stages of creating and designing a software product, software product life cycle
          </footer>
          <footer class="blockquote-footer">Bootstrap</footer>
-         <footer class="blockquote-footer">Form validation</footer>
-         <footer class="blockquote-footer">Deploy to production</footer>
+         <footer class="blockquote-footer lng-meat-mastered-7">Form validation</footer>
+         <footer class="blockquote-footer lng-meat-mastered-8">Deploy to production</footer>
 
       
       <hr>
 
-      <h3 class="mt-5">Gallery</h3>
+      <h3 class="mt-5 lng-meat-gallery-title">Gallery</h3>
          <img class="gallery-img" src="assets/imgs/meat.jpeg" alt="">
       <hr>
 
@@ -67,8 +78,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-6">
-                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com" target="_blank">DevCRUD</a></p>
-                </div>
+                  <p>kamil.alimetov@mail.ru</p>   
+               </div>
                 <div class="col-sm-6">
                   <div class="socials">
                      <a class="social-item" href="https://t.me/clementine1703"><i class="fab fa-telegram"></i></a>
@@ -86,19 +97,35 @@
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-    <!-- steller js -->
+    <!-- js -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
+    <script src="assets/js/translate.js"></script>
 
     <script>
       document.addEventListener('DOMContentLoaded', ()=>{
-          const phrases = [
-         'First project',
-         'Authorization',
-         'Bucket',
-         'Own design',
-         'Php backend',
-         "Yandex analytics"
+         let phrases = []
+
+         if (localStorage.getItem('lang') == '#en'){
+            phrases = [
+            'First project', //Первый проект
+            'Authorization', //Авторизация
+            'Bucket', //Корзина
+            'Own design', //Собстыенный дизайн
+            'PHP backend', //Бэкэнд на PHP
+            "Yandex analytics" //Яндекс Аналитика
          ]
+         } else {
+            phrases = [
+            'Первый проект', //Первый проект
+            'Авторизация', //Авторизация
+            'Корзина', //Корзина
+            'Собстыенный дизайн', //Собстыенный дизайн
+            'Бэкэнд на PHP', //Бэкэнд на PHP
+            "Яндекс Аналитика" //Яндекс Аналитика
+            ]
+         }
+         
 
          const el = document.querySelector('.dynamic-text')
          const fx = new TextScramble(el)

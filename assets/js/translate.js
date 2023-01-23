@@ -5,6 +5,8 @@ const allLang = ['en', 'ru'];
 function langChange(hash){
 	window.location.hash = hash;
 	changeLanguage()
+    localStorage.setItem('lang', window.location.hash);
+    location.reload();
 }
 
 
@@ -12,8 +14,14 @@ function changeLanguage() {
     let hash = window.location.hash;
     hash = hash.substr(1);
     if (!allLang.includes(hash)) {
-        location.href = window.location.pathname + '#en';
-        location.reload();
+        if (localStorage.getItem('lang')){
+            hash = localStorage.getItem('lang')
+            location.href = window.location.pathname + hash;
+            hash = hash.substr(1)
+        }
+        else {
+            location.href = window.location.pathname + '#en';
+        }
     }
     for (let key in langArr) {
         let elem = document.querySelector('.lng-' + key);
@@ -24,4 +32,4 @@ function changeLanguage() {
     }
 }
 
-changeLanguage();
+changeLanguage()

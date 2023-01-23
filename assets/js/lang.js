@@ -1,4 +1,8 @@
 const langArr = {
+    "homebtn" :  {
+        "ru": "Главная",
+        "en": "Home",
+    },
     "navhome" :  {
         "ru": "Главная",
         "en": "Home",
@@ -20,7 +24,7 @@ const langArr = {
         "en": "Portfolio",
     }, 
     "header-subtitle": {
-        "ru": "привет,я",
+        "ru": "привет, я",
         "en": "hello,I'm",
     }, 
     "header-name": {
@@ -48,8 +52,8 @@ const langArr = {
         "en": "Project Completed",
     },
 	"underheader-3": {
-        "ru": "Написано строк кода",
-        "en": "Written lines of code",
+        "ru": "Оптимизировано строк кода",
+        "en": "Optimized lines of code",
     },
 	"about-name": {
         "ru": "Камиль Алиметов",
@@ -68,7 +72,7 @@ const langArr = {
         "en": "I am a 4th year student of SPbSUT Information security. I have been interested in programming and IT since the age of 14. I tried myself in different areas, from games and modeling to robots and the Internet of things. But most of all I am drawn to the Web. I have all the qualities a programmer needs: I am able to work in a team, I can learn and teach, I think beyond the scope of technical specifications, I am not afraid to take responsibility and complete tasks on time. I position myself as junior+",
     },
 	"about-line2": {
-        "ru": "- Разработал сайты с использованием современных технологий",
+        "ru": "— Разрабатывал сайты с использованием современных технологий",
         "en": "— Developed websites using modern technologies (Python, Django, SQL/MySQL, C++, JS, etc.)",
     },
 	"about-line3": {
@@ -76,7 +80,7 @@ const langArr = {
         "en": "— Improved the teamwork process by implementing a modern framework and design/development patterns.",
     },
 	"about-line4": {
-        "ru": "- Дорабатывал макеты и существующие компоненты. Разрабатывал новые компоненты для различных веб-сайтов.",
+        "ru": "— Дорабатывал макеты и существующие компоненты. Разрабатывал новые компоненты для различных веб-сайтов.",
         "en": "— Finalized the layout and existing components. Developed new components for various websites.",
     },
 	"about-line5": {
@@ -187,9 +191,227 @@ const langArr = {
         "ru": "Сайт для аренды комнат",
         "en": "Rental website",
     },
-	"": {
+	"meat-title": {
+        "ru": 'ОНЛАЙН МАГАЗИН "КРОЛЬЧАНСК"',
+        "en": 'ONLINE STORE "KROLCHANSK"',
+    },
+	"meat-description": {
+        "ru": "Онлайн магазин по продаже мяса. Собственный дизайн, аналитика посещений.<br>PHP7, SQL/MySQL, Html/Css, Docker, Yandex<br>",
+        "en": "Online showcase for the sale of meat. Own design, analytics of visits.<br>PHP7, SQL/MySQL, Html/Css, Docker, Yandex<br>",
+    },
+	"meat-purpose-title": {
+        "ru": "Цель",
+        "en": "Purpose",
+    },
+	"meat-purpose-description": {
+        "ru": "Получение опыта в написании интернет-магазина, аналитика заинтересованности товарами и вослечённость аудитории. Продвинутое развитие ключевых навыков в web разработке, работе с базами данных, паттернах программирования и проектирования, автодеплой и поддержание сайта на хостинге",
+        "en": "Gaining experience in writing an online store, analytics of product interest and audience engagement. Advanced development of key skills in web development, working with databases, programming and design patterns, auto-deploy and maintaining a site on a hosting.",
+    },
+	"meat-key-title": {
+        "ru": "Ключевые особенности",
+        "en": "Key Features",
+    },
+	"meat-key-description": {
+        "ru": "Яндекс аналитика, автодеплой docker, авторизация и система ролей, взаимодействие с базой данных, bootstrap.",
+        "en": "Yandex analytics, autodeploy docker, authorization and role system, interaction with the database, bootstrap.",
+    },
+	"meat-mastered-title": {
+        "ru": "Освоено/развито",
+        "en": "Mastered/developed",
+    },
+	"meat-mastered-description": {
+        "ru": "Реализовывая данный сайт я освоил как в теории, так и на практике следующие аспекты:",
+        "en": "Implementing this site, I have mastered both in theory and in practice the following aspects of:",
+    },
+	"meat-mastered-2": {
+        "ru": "Подключение и анализ Яндкес метрики",
+        "en": "Connecting and analyzing Yandex metrics",
+    },
+	"meat-mastered-3": {
+        "ru": "Автодеплой и Docker",
+        "en": "Autodeploy and Docker",
+    },
+	"meat-mastered-5": {
+        "ru": "Этапы создания и проектирования программного продукта, жизненный цикл программного продукта",
+        "en": "Stages of creating and designing a software product, software product life cycle",
+    },
+	"meat-mastered-7": {
+        "ru": "Валидация форм",
+        "en": "Form validation",
+        
+    },
+	"meat-mastered-8": {
+        "ru": "Деплой на продакшен",
+        "en": "Deploy to production",
+    },
+	"meat-gallery-title": {
+        "ru": "Галерея",
+        "en": "Gallery",
+    },
+	"chat-title": {
+        "ru": 'СИСТЕМА ДЛЯ ОБМЕНА СООБЩЕНИЯМИ "SCRUMERS"',
+        "en": 'MESSAGING SYSTEM "SCRUMERS"',
+    },
+	"chat-description": {
+        "ru": "Дипломный проект. Разработка защищенной системы мгновенного обмена сообщениями. Собственный дизайн.<br>Django, Djoser, Channels, Docker, Redis, Vue, Vuex, Vue-router, HTML/CSS<br>",
+        "en": "Graduation project. Development of a secure instant messaging system. Own design.<br>Django, Djoser, Channels, Docker, Redis, Vue, Vuex, Vue-router, HTML/CSS<br>",
+    },
+	"chat-purpose-title": {
+        "ru": "Цель",
+        "en": "Purpose",
+    },
+	"chat-purpose-description": {
+        "ru": "Получение опыта в написании чата, реализации логики обмена сообщениями, работе с вебсокет соединениями. Продвинутое развитие ключевых навыков в web разработке, работе с базами данных, паттернах программирования и проектирования, деплой и поддержание сайта на хостинге",
+        "en": "Gaining experience in writing chats, implementing the logic of messaging, working with websocket connections. Advanced development of key skills in web development, working with databases, programming and design patterns, deploy and maintaining a site on a hosting.",
+    },
+	"chat-key-title": {
+        "ru": "Ключевые особенности",
+        "en": "Key Features",
+    },
+	"chat-key-description": {
+        "ru": "Настройка веб-сервера (Nginx), Роутинг (Vue), Вебсокеты, Яндекс Аналитика, авторизация и система ролей, взаимодействие с базой данных, bootstrap.", 
+        "en": "Сonfiguring the web server (Nginx), Routing (Vue), Websockets, Yandex analytics, authorization and role system, interaction with the database, bootstrap.",
+    },
+	"chat-mastered-title": {
+        "ru": "Освоено/развито",
+        "en": "Mastered/developed",
+    },
+	"chat-mastered-description": {
+        "ru": "Реализовывая данный сайт я освоил как в теории, так и на практике следующие аспекты:",
+        "en": "Implementing this site, I have mastered both in theory and in practice the following aspects of:",
+    },
+	"chat-mastered-1": {
+        "ru": "Этапы создания и проектирования программного продукта, жизненный цикл программного продукта",
+        "en": "Stages of creating and designing a software product, software product life cycle",
+    },
+	"chat-mastered-2": {
+        "ru": "Авторизация",
+        "en": "Authorization",
+    },
+	"chat-mastered-3": {
+        "ru": "Валидация форм",
+        "en": "Form validation",
+    },
+	"chat-mastered-4": {
+        "ru": "Деплой на продакшен",
+        "en": "Deploy to production",
+    },
+	"chat-gallery-title": {
+        "ru": "Галерея",
+        "en": "Gallery",
+    },
+	"snake-title": {
+        "ru": 'СОРЕВНОВАТЕЛЬНАЯ ИГРА "ЗМЕЮКА"',
+        "en": 'COMPETITIVE GAME "SNAKE"',
+    },
+	"snake-description": {
+        "ru": "Программа для организации игровой досуговой деятельности<br>Python, Pygame, Socket<br>",
+        "en": "A program for organizing gaming and leisure activities<br>Python, Pygame, Socket<br>",
+    },
+    "snake-purpose-title": {
+        "ru": "Цель",
+        "en": "Purpose",
+    },
+	"snake-purpose-description": {
+        "ru": "Набраться опыта в написании игровых программ. Научиться продумывать логику игровых и иных процессов.",
+        "en": "Gain experience in writing game programs. Learn to think through the logic of gaming and other processes.",
+    },
+	"snake-key-title": {
+        "ru": "Ключевые особенности",
+        "en": "Key Features",
+    },
+	"snake-key-description": {
+        "ru": "Реализация в стиле ООП, построение контекстного меню с помощью tkinter, знакомство с низкоуровневыми сетевыми интерфейсами.",
+        "en": "Implementation in the OOP style, building a context menu using tkinter, introduction to low-level network interfaces.",
+    },
+	"snake-mastered-title": {
+        "ru": "Освоено/развито",
+        "en": "Mastered/developed",
+    },
+	"snake-mastered-description": {
+        "ru": "Реализовывая данную программу я освоил как в теории, так и на практике следующие аспекты:",
+        "en": "Implementing this program, I have mastered both in theory and in practice the following aspects of:",
+    },
+	"snake-mastered-2": {
+        "ru": "Настройка и использование pygame",
+        "en": "Setting up and using pygame",
+    },
+	"snake-mastered-3": {
+        "ru": "Настройка 'Socket' для взаимодействия двух экземпляров программы",
+        "en": "Configuring 'Socket' for interaction between two instances of the program",
+    },
+	"snake-mastered-5": {
+        "ru": "Pyinstaller для упаковывки (пакетов) программ Python в автономные исполняемые файлы",
+        "en": "Pyinstaller for packaging (packages) of Python programs into standalone executable files",
+    },
+    "snake-gallery-title": {
+        "ru": "Галерея",
+        "en": "Gallery",
+    },
+    "apart-title": {
+        "ru": 'САЙТ ДЛЯ АРЕНДЫ КОМНАТ "ROOMS72"',
+        "en": 'RENTAL WEBSITE "ROOMS72"',
+    },
+	"apart-description": {
+        "ru": "Интернет-витрина апартаментов для почасовой аренды. Собственный дизайн. Аналитика посещений.<br>Python, Django, Html/Css, Docker, Yandex<br>",
+        "en": "Internet showcase of apartments for hourly rent. Own design, analytics of visits.<br>Python, Django, Html/Css, Docker, Yandex<br>",
+    },
+	"apart-purpose-title": {
+        "ru": "Цель",
+        "en": "Purpose",
+    },
+	"apart-purpose-description": {
+        "ru": "Получение опыта работы с Django, настройка админ-панели, аналитика заинтересованности товарами и вослечённость аудитории. Продвинутое развитие ключевых навыков в web разработке, работе с базами данных, паттернах программирования и проектирования, автодеплой и поддержание сайта на хостинге",
+        "en": "Getting experience with Django, setting up the admin panel, analytics of product interest and audience engagement. Advanced development of key skills in web development, working with databases, programming and design patterns, auto-deploy and maintaining a site on a hosting.",
+    },
+	"apart-key-title": {
+        "ru": "Ключевые особенности",
+        "en": "Key Features",
+    },
+	"apart-key-description": {
+        "ru": "Реализация CRUD, настройка индексирования сайта, яндекс аналитика, авторизация и система ролей, взаимодействие с базой данных, bootstrap.", 
+        "en": "CRUD implementation, setting up site indexing, yandex analytics, authorization and role system, interaction with the database, bootstrap.",
+    },
+	"apart-mastered-title": {
+        "ru": "Освоено/развито",
+        "en": "Mastered/developed",
+    },
+	"apart-mastered-description": {
+        "ru": "Реализовывая данный сайт я освоил как в теории, так и на практике следующие аспекты:",
+        "en": "Implementing this site, I have mastered both in theory and in practice the following aspects of:",
+    },
+    "": {
         "ru": "",
         "en": "",
+    },
+    "apart-mastered-4": {
+        "ru": "UTM метки",
+        "en": "UTM tags",
+    },
+    "apart-mastered-5": {
+        "ru": "Подключение и анализ Яндкес метрики",
+        "en": "Connecting and analyzing Yandex metrics",
+    },
+	"apart-mastered-6": {
+        "ru": "Автодеплой и Docker",
+        "en": "Autodeploy and Docker",
+    },
+	"apart-mastered-8": {
+        "ru": "Этапы создания и проектирования программного продукта, жизненный цикл программного продукта",
+        "en": "Stages of creating and designing a software product, software product life cycle",
+    },
+	"apart-mastered-9": {
+        "ru": "Валидация форм",
+        "en": "Form validation",
+        
+    },
+	"apart-mastered-10": {
+        "ru": "Деплой на продакшен",
+        "en": "Deploy to production",
+    },
+    "apart-gallery-title": {
+        "ru": "Галерея",
+        "en": "Gallery",
     },
 	"": {
         "ru": "",
@@ -223,4 +445,5 @@ const langArr = {
         "ru": "",
         "en": "",
     },
+
 }
