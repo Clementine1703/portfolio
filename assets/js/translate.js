@@ -192,6 +192,10 @@ const langArr = {
         "ru": "Сайт для аренды комнат",
         "en": "Rental website",
     },
+    "portfolio-5": {
+        "ru": "Программа для создания стегосистем",
+        "en": "A program for creating stegosystems",
+    },
     "hireme-title": {
         "ru": "Наймите меня для вашего проекта",
         "en": "Hire me for your project",
@@ -412,13 +416,60 @@ const langArr = {
 	"apart-mastered-9": {
         "ru": "Валидация форм",
         "en": "Form validation",
-        
     },
 	"apart-mastered-10": {
         "ru": "Деплой на продакшен",
         "en": "Deploy to production",
     },
     "apart-gallery-title": {
+        "ru": "Галерея",
+        "en": "Gallery",
+    },
+    "stego-title": {
+        "ru": 'СТЕГАНОГРАФИЧЕСКАЯ ПРОГРАММА "HIDER"',
+        "en": 'STEGANOGRAPHIC PROGRAM "HIDER"',
+    },
+    "stego-description": {
+        "ru": "ПО для реализации метода расширения спектра<br>Python, matplotlib, wave, scipy, tkinter<br>",
+        "en": "Software for the implementation of the spectrum extension method<br>Python, matplotlib, wave, scipy, tkinter<br>",
+    },
+    "stego-purpose-title": {
+        "ru": "Цель",
+        "en": "Purpose",
+    },
+	"stego-purpose-description": {
+        "ru": "Набраться опыта в написании инструментов для стеганографии. Научиться продумывать логику создания и расшифровки стегосистем.",
+        "en": "Gain experience in writing tools for steganography. Learn to think through the logic of creating and decoding stegosystems.",
+    },
+	"stego-key-title": {
+        "ru": "Ключевые особенности",
+        "en": "Key Features",
+    },
+	"stego-key-description": {
+        "ru": "Реализация в стиле ООП, построение контекстного меню с помощью tkinter, знакомство с устройством WAVE-файлов.",
+        "en": "Implementation in the OOP style, building a context menu using tkinter, getting to know the device of WAVE files.",
+    },
+	"stego-mastered-title": {
+        "ru": "Освоено/развито",
+        "en": "Mastered/developed",
+    },
+	"stego-mastered-description": {
+        "ru": "Реализовывая данную программу я освоил как в теории, так и на практике следующие аспекты:",
+        "en": "Implementing this program, I have mastered both in theory and in practice the following aspects of:",
+    },
+	"stego-mastered-2": {
+        "ru": "Настройка и использование matplotlib, scipy, tkinter, wave",
+        "en": "Setting up and using matplotlib, scipy, tkinter, wave",
+    },
+	"stego-mastered-3": {
+        "ru": "Реализация алгоритма создания и расшифровки стегосистем. Реализация метода расширения спектра путем замены НЗБ на основании +1/-1 ПСП",
+        "en": "Implementation of the algorithm for creating and decoding stegosystems. Implementation of the spectrum expansion method by replacing the least significant bit based on +1/-1 pseudorandom sequence",
+    },
+	"stego-mastered-5": {
+        "ru": "Pyinstaller для упаковывки (пакетов) программ Python в автономные исполняемые файлы",
+        "en": "Pyinstaller for packaging (packages) of Python programs into standalone executable files",
+    },
+    "stego-gallery-title": {
         "ru": "Галерея",
         "en": "Gallery",
     },
